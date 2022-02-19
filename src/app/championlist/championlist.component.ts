@@ -34,7 +34,7 @@ export class ChampionlistComponent implements OnInit {
   rowData: Observable<any[]>;
 
   constructor(private http: HttpClient) {
-    this.rowData = this.http.get<any[]>('https://raw.githubusercontent.com/zizo2k21/angular_app/main/src/app/champion.json');
+    this.rowData = this.http.get<any[]>('https://raw.githubusercontent.com/zizo2k21/angular_app/develop/src/app/championlist/champion.json');
 }
   champion:Champion[]= championList;
 
