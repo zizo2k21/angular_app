@@ -29,12 +29,13 @@ export class ChampionlistComponent implements OnInit {
     {headerName: "Name", field:"name"},
     {headerName: "Title", field:"title"},
     {headerName: "Tags", field:"tags"},
-    {headerName: "Key", field:"key"}
+    {headerName: "Key", field:"key"},
+    {headerName: "Victoire", field:"Victoires"}
   ]; 
   rowData: Observable<any[]>;
 
   constructor(private http: HttpClient) {
-    this.rowData = this.http.get<any[]>('https://raw.githubusercontent.com/zizo2k21/angular_app/develop/src/app/championlist/champion.json');
+    this.rowData = this.http.get<any[]>('https://raw.githubusercontent.com/zizo2k21/angular_app/main/src/app/championlist/champion.json');
 }
   champion:Champion[]= championList;
 
