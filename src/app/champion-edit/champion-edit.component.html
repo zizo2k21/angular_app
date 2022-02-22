@@ -1,0 +1,23 @@
+<form [formGroup]="championForm" (ngSubmit)="validate()" >
+    <div class="form-group" >
+        <label>id</label>
+        <input type="number" [value]="" [disabled]="true" class="form-contol" formControlName="id">
+    </div>
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-contol"formControlName="name">
+    </div>
+    <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-contol"formControlName="title">
+    </div>
+    <div class="form-group">
+        <label>Tags</label>
+        <input type="text" class="form-contol"formControlName="tags">
+    </div>
+    <div class="form-group">
+        <label>Key</label>
+        <input type="text" class="form-contol"formControlName="key">
+    </div>
+    <button type ="submit" class="btn btn-primary">Valider</button>
+</form>

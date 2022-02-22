@@ -22,6 +22,8 @@
     "@angular/router": "~13.2.0",
     "ag-grid-angular": "^27.0.0",
     "ag-grid-community": "^27.0.1",
+    "angular-bootstrap-md": "^12.2.0",
+    "angular-in-memory-web-api": "^0.13.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
