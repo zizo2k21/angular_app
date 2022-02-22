@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ChampionService } from './ChampionInmemoryService/champion.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { BtnCellRenderer } from './championlist/button-cell-renderer.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { BtnCellRenderer } from './championlist/button-cell-renderer.component';
     ReactiveFormsModule,
     MatButtonModule,
     HttpClientInMemoryWebApiModule.forRoot(ChampionService),
+    MDBBootstrapModule
   ],
   providers: [],
   bootstrap: [AppComponent]
