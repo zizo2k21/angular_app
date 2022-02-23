@@ -72,9 +72,16 @@ addChampion(champion: IChampion){
   }
   validate() {
     console.log('Données du champion.....', this.championForm.value);
-
-    this.addChampion(this.championForm.value)
-
-    this.updateChampion( this.championForm.value)
+    if (this.championForm.value != null){
+      this.updateChampion( this.championForm.value)
+    }
+    else{
+      this.addChampion(this.championForm.value)
+    }
+    
+    
+    
   }
+  
+  
 }

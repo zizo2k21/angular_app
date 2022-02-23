@@ -17,7 +17,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ChampionService } from './ChampionInmemoryService/champion.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { BtnCellRenderer } from './championlist/button-cell-renderer.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     HeaderComponent,
     ChampionEditComponent,
     BtnCellRenderer,
+    FooterComponent,
     
     
   ],
